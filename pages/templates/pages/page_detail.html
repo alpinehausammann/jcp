@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% load static from staticfiles %}
+
+{% block title %}<title>"j&amp;C: {{pages.title}} " </title> {% endblock %}
+
+{% block header %}
+<header>
+        <h1><a href="/"><img src= "{% static 'img/interface/logo.png' %}", alt="J&amp;C Property Maintenance"></a></h1> 
+    <ul>
+        {% for title in pages.title %}
+        <div class='nav-item'><li><a href='{{title}}'>{{title}}</a></div>
+        {% endfor %}
+    </ul>    
+</header>
+{% endblock %}
+
+{% block content %}
+<article>
+    {{pages.content}}
+</article>
+
+{% endblock %}

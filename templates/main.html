@@ -1,0 +1,28 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title> {% block title %} {% endblock %} </title>
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="landscaping, lawn, maintenance, property, care" />
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	</head>
+	
+	<body>
+
+		{% block header %}
+		{% endblock %}
+
+		{% block content %}
+		{% endblock %}
+		
+		{% block footer %}
+		{% endblock %}
+		
+	</body>
+
+</html>
+
