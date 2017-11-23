@@ -1,0 +1,80 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body html {
+    margin: 0;
+    padding: 0;
+    border-radius:20px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr ;
+    grid-template-rows: 100px minmax(200px, 1fr) 100px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+        "header header nav"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    display: inline;
+    grid-area: header;
+    background-color: rgb(59, 118, 166);
+}
+nav {
+    grid-area: nav;
+    background-color: rgb(217, 159, 73);
+
+}
+main {
+    grid-area: main;
+    background-color: rgb(180, 61, 136);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(61, 28, 143);
+}
+
+img.align-left {
+    margin-right: 10px;
+    float: left;
+}
+
+img.header{
+    display: flex;
+    flex-flow: row;
+    width: 100px;
+    margin: auto;
+}
+
+#logo-img {
+    padding-bottom: 20wpx;
+    font-size: 18px;
+    display:inline;
+    float: left;
+}
+
+ .nav-item {
+    display: inline;
+
+}
+
+#logo2 {
+
+}
+
+.box {
+    border: solid 1px rgba(110,133,156,0.15);
+    border-radius: 0.3em;
+}

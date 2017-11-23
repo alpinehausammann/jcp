@@ -1,0 +1,10 @@
+####Game Plan####
+- Use only 1 app "core"
+- Abstract pieces of page and make available from the CMS
+    -Insert Picture
+    -Insert Text/Picture
+    -Slideshow
+    -Form
+    -testimonials
+    -header/footer/logo
+-be able to preview changes?
