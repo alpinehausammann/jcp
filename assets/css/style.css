@@ -1,0 +1,26 @@
+* {
+    border: solid 1px rgba(110,133,156,0.15);
+    border-radius: 0.3em;
+
+}
+
+body, html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+header {
+    background-color: rgb(59, 118, 166);
+}
+
+nav {
+    background-color: rgb(217, 159, 73);
+}
+main {
+    background-color: rgb(180, 61, 136);
+
+}
+
+footer {
+    background-color: rgb(61, 28, 143);
+}
