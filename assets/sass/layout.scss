@@ -1,0 +1,151 @@
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+
+}
+body, html{
+    width:100%;
+    background-color: rgb(231, 204, 159);
+}
+
+body{
+    padding-top:120px;
+}
+.container{
+    display: block;
+    position:relative;
+    width: 100%;
+    height:auto;
+    margin:10px auto;
+    padding: 5px;
+}
+
+#content.container{
+    display: block;
+    position:relative;
+    width: 100%;
+    height:auto;
+    margin:10px auto 0 auto;
+    padding: 5px 5px 0px 5px;
+}
+.banner{
+    // position:absolute;
+    // top: 0;
+    // z-index: 100;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    width:100%;
+    background-color: rgb(21, 109, 159);
+
+    img{
+        width:100px;
+    }
+
+    #logo-lg{
+        display: inline-block;
+        width: 30%;
+        height: 100px;
+        padding-top: 10px;
+        vertical-align: text-bottom;
+
+    }
+
+    #logo2{
+        display: inline-block;
+        position: relative;
+        font-size: 2.5rem;
+        font-weight:bold ;
+        top:7px;
+        // height:100px;
+        vertical-align: text-bottom;
+        }
+        line-height: 2.9rem;
+
+}
+
+.banner.top{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav.nav {
+    display: inline-block;
+    background-color: rgb(255, 143, 71);
+    float:right;
+    height: 120px;
+    width:40%;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+
+    ul {
+        display: inline-block;
+        position:relative;
+        top: 43px;
+        margin: 0 auto;
+    }
+    li {
+        display: inline-block;
+
+    }
+
+    a {
+        color: white;
+        display: block;
+        padding: 5px 10px;
+    }
+}
+main {
+    *{border-radius: 10px;}
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 80%;
+    $main_height: 100% !global;
+    height: $main_height;
+    border-radius: 10px;
+    background-color: rgb(224, 125, 125);
+    section.container{
+        background-color: rgb(112, 214, 251);
+        padding:20px 30px;
+        line-height: 1.5em;
+    }
+}
+
+#main-slideshow {
+    background-color: grey;
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+
+
+    img{
+        display: inline-block;
+        position: relative;
+        background-color: rgb(210, 148, 42);
+        margin: 10px 0;
+        height: 480px;
+        width: 90%;
+
+    }
+}
+
+#main-footer {
+    height:120px;
+    text-align: center;
+    line-height: -50px;
+    .container{
+        position:relative;
+        overflow: hidden;
+        top: 60px;
+        padding:0;
+        margin:0;
+        line-height: 1.5rem;
+
+    }
+}
