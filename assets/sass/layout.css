@@ -5,7 +5,8 @@
 
 body, html {
   width: 100%;
-  background-color: #e7cc9f;
+  background-color: #38a33a;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 body {
@@ -31,34 +32,49 @@ body {
 }
 
 .banner {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
-  height: 120px;
+  height: 25vh;
   width: 100%;
-  background-color: #156d9f;
-  line-height: 2.9rem;
+  background-color: #ffffff;
 }
 
 .banner img {
-  width: 100px;
+  height: 25vh;
 }
 
 .banner #logo-lg {
-  display: inline-block;
+  display: block;
   width: 30%;
-  height: 100px;
-  padding-top: 10px;
+  height: 25vh;
   vertical-align: text-bottom;
 }
 
-.banner #logo2 {
+.banner #logo-lettering {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  top: 20px;
+}
+
+.banner #logo-lettering #logo2 {
   display: inline-block;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  top: 7px;
   vertical-align: text-bottom;
+}
+
+.banner #logo-lettering #logo3 {
+  position: relative;
+  left: 2px;
+  display: inline-block;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  vertical-align: text-bottom;
+  letter-spacing: .2rem;
 }
 
 .banner.top {
@@ -70,10 +86,9 @@ body {
 }
 
 nav.nav {
-  display: inline-block;
-  background-color: #ff8f47;
+  background-color: #ffffff;
   float: right;
-  height: 120px;
+  height: 25vh;
   width: 40%;
   margin: 0;
   text-align: center;
@@ -88,12 +103,12 @@ nav.nav ul {
 }
 
 nav.nav li {
-  display: inline-block;
+  display: inherit;
 }
 
 nav.nav a {
-  color: white;
-  display: block;
+  color: #729a2d;
+  display: hidden;
   padding: 5px 10px;
 }
 

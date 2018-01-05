@@ -1,3 +1,13 @@
+$header-height: 25vh;
+$header-text-size: 1.5rem;
+// $header-color:hsl(121,64%,37%);
+$header-color:#ffffff;
+$background-color:hsl(121,49%,43%);
+// $forground-color:;
+// $nav-color:;
+// $footer-color:;
+
+
 * {
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -5,7 +15,8 @@
 }
 body, html{
     width:100%;
-    background-color: rgb(231, 204, 159);
+    background-color: $background-color;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 body{
@@ -32,37 +43,54 @@ body{
     // position:absolute;
     // top: 0;
     // z-index: 100;
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
-    height: 120px;
+    height: $header-height;
     width:100%;
-    background-color: rgb(21, 109, 159);
+    background-color: $header-color;
 
     img{
-        width:100px;
+        height:$header-height;
     }
 
     #logo-lg{
-        display: inline-block;
+        display:block;
         width: 30%;
-        height: 100px;
-        padding-top: 10px;
+        height: $header-height;
+        // padding-top: 10px;
         vertical-align: text-bottom;
 
     }
 
-    #logo2{
-        display: inline-block;
+    #logo-lettering{
         position: relative;
-        font-size: 2.5rem;
-        font-weight:bold ;
-        top:7px;
-        // height:100px;
-        vertical-align: text-bottom;
-        }
-        line-height: 2.9rem;
+        display:inline-block;
+        width:auto;
+        height:auto;
+        top:20px;
+        #logo2{
+            display: inline-block;
+            position: relative;
+            font-size:$header-text-size;
+            // font-size: 2.5rem;
+            font-weight: bold;
+            // height:100px;
+            vertical-align: text-bottom;
+            }
+            // line-height: 2.9rem;
 
+        #logo3{
+            position:relative;
+            left:2px;
+            display:inline-block;
+            font-family: 'Didact Gothic', sans-serif;
+            font-weight: bold;
+            vertical-align: text-bottom;
+            letter-spacing: .2rem;
+
+        }
+    }
 }
 
 .banner.top{
@@ -73,10 +101,10 @@ body{
     z-index: 1000;
 }
 nav.nav {
-    display: inline-block;
-    background-color: rgb(255, 143, 71);
+
+    background-color: $header-color;
     float:right;
-    height: 120px;
+    height: $header-height;
     width:40%;
     margin: 0;
     text-align: center;
@@ -89,13 +117,13 @@ nav.nav {
         margin: 0 auto;
     }
     li {
-        display: inline-block;
+        display: inherit;
 
     }
 
     a {
-        color: white;
-        display: block;
+        color: hsl(82,55%,39%);
+        display: hidden;
         padding: 5px 10px;
     }
 }
